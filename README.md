@@ -279,6 +279,6 @@ $.ajax({
 ```
 // Например, wiki_workUserID
 // Название составляется из $wgDBuser + _workUserID
-// $$wgDBuser указывается в LocalSettings.php
+// $wgDBuser указывается в LocalSettings.php
 $cookie_name = "";
 ```

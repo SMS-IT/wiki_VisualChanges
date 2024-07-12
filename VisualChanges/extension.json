@@ -1,0 +1,64 @@
+{
+	"name": "VisualChanges",
+	"author": "sms-it",
+	"version": "1.0.1",
+	"url": "http://sms-it.ru",
+	"descriptionmsg": "vc-desc",
+	"license-name": "GPL-2.0+",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"ext.VisualChanges": [
+			"i18n"
+		]
+	}, 
+	"AutoloadClasses": {
+		"ChangesHooks": "ChangesHooks.php"
+	},
+	"ResourceModules": {
+		"ext.VisualChanges.visualEditor": {
+			"scripts": [
+				"ve/ve.ui.ChangesInputWidget.js",
+				"ve/ve.dm.ChangesAnnotationDiv.js",
+				"ve/ve.ce.ChangesAnnotationDiv.js",
+				"ve/ve.ui.ChangesInspectorDiv.js",
+				"ve/ve.ui.ChangesContextItemDiv.js",
+				"ve/ve.ui.ChangesInspectorToolDiv.js",
+				"ve/ve.ui.ChangesAction.js"
+			],
+			"styles": [
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore",
+				"ext.visualEditor.core",
+				"ext.visualEditor.mwextensions",
+				"ext.visualEditor.mediawiki"
+			],
+			"messages": [
+				
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "VisualChanges/modules"
+	},
+	"VisualEditorPluginModules": [
+		"ext.VisualChanges.visualEditor"
+	],
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"ChangesHooks::efChangesParserFirstCallInit"
+		],
+		"OutputPageBeforeHTML": [
+			"ChangesHooks::ChangesFilter_BeforeHTML"
+		],
+		"SkinTemplateNavigation": [
+			"ChangesHooks::contentHook"
+		]
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"SMS-IT",
+			"Aleksey Zaretskiy"
+		]
+	},
+	"acceptpagechanges": "Подтвердить изменения на странице",
+	"acceptpagechangeshistory": "Показать историю изменений страницы",
+	"descriptionmsg": "Добавляет закладку подтверждения на все обычные страницы",
+	"acceptpagechanges-failed": "Подтверждение не удалось",
+	"vc-desc": "Расширение для визуализации изменений"
+}

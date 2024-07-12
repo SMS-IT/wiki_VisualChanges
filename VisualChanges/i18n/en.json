@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"SMS-IT",
+			"Aleksey Zaretskiy"
+		]
+	},
+	"acceptpagechanges": "Accept changes on page",
+	"acceptpagechangeshistory": "Show changes history from current page",
+	"descriptionmsg": "Adds an accept changes tab on all allowing pages",
+	"acceptpagechanges-failed": "Accept failed",
+	"vc-desc": "Extension for visualize changes"
+}

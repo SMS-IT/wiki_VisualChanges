@@ -1,0 +1,22 @@
+/*Добавить в customizations/custom.css*/
+
+.changes_radio_mode {
+    display: inline-block;
+    margin-right: 5px;
+}
+.changes_radio_mode input[type=radio] {
+    display: none;
+}
+.changes_radio_mode label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 10px;
+    line-height: 26px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.changes_radio_mode input[type=radio]:checked + label {
+    background: #ffe0a6;
+}
